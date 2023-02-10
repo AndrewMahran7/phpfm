@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+		
+</head>
+<body>
+
+<center>
+	<h1>Bulletin</h1>
+	<div id="board">
+		<p id="unote"></p>
+	</div>
+
+	<form name="mform" onSubmit=javascript:newNote()">
+		<input type="text" id="note" placeholder="What do you want to say?">
+		<input type="submit" value="Update">
+	</form>
+</center>
+</body>
+</html>
+
+<style>
+#board {
+	width: 50%;
+	border: 15px solid green;
+	padding: 50px;
+	margin: 20px;
+	text-align: center;
+	height:50%; 
+	background-color: 3cd12e;
+
+}
+
+#note {
+	width: 35%;
+	height: 10%;
+	text-align: top;
+}
+</style>
+
+<script type="text/javascript">
+function newNote() {
+	document.getElementbyId("unote").innerHTML = "Hello";
+	document.write("hello");
+	alert("hello");
+}
+</script>
